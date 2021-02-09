@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+
+        body {
+            background-color: hsl(185, 75%, 39%);
+            overflow: hidden;
+            padding: 0%;
+            margin: 0%;
+            border: hidden;
+            font-family: 'Kumbh Sans', sans-serif;
+        }
+
+        .top {
+            position: fixed;
+            /*border: 1px solid rgb(216, 64, 64);*/
+            top: -50%;
+            left: -5%;
+        }
+
+        .bottom {
+            position: absolute;
+            /*border: 1px solid #000;*/
+            right: -10%;
+            top: 50%;
+
+        }
+
+        .card {
+            height: 575px;
+            width: 550px;
+            background-color: #fff;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        p {
+            color: hsl(0, 0%, 59%);
+            font-weight: 400;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="top" src="images/bg-pattern-top.svg" alt="top Circle"></div>
+    <img class="bottom" src="images/bg-pattern-bottom.svg" alt="bottom circle"></div>
+    <div class="card" style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+
+        <div style="position: relative; height: 200px; background-image: url('./images/bg-pattern-card.svg');">
+            <div><img
+                    style="border:5px solid #fff; border-radius: 50%; height: 120px;  position: absolute; top: 100%; left: 50%; transform: translate(-50%, -50%);"
+                    src="./images/image-victor.jpg"></div>
+        </div>
+
+        <div style="height: 80px;"></div>
+
+        <div style=" height: 80px; text-align: center; border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding: 5%;">
+            <div style=" font-size: 24px; font-weight: 700; "><span>Victor
+                    Crest</span> <span style="color: hsl(0, 0%, 59%); font-size: 24px; font-weight: 400;">26</span>
+            </div>
+            <p class="subtext">London</p>
+        </div>
+
+        <div style="flex-wrap: wrap; display: flex; justify-content: space-around;  height: 80px; padding: 5%;">
+            <div
+                style="display: flex; justify-content: space-around; width: 100%; font-size: 24px; text-align: center; font-weight: 700;">
+                <div>80K <p class="subtext">Followers</p>
+                </div>
+                <div>803K <p class="subtext">Likes</p>
+                </div>
+                <div>1.4K <p class="subtext">Photos</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/madhav7360">Madhav Manocha</a>.
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
