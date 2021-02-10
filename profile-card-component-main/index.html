@@ -31,6 +31,12 @@
             font-family: 'Kumbh Sans', sans-serif;
         }
 
+        div {
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+        }
+
         .top {
             position: fixed;
             /*border: 1px solid rgb(216, 64, 64);*/
@@ -41,22 +47,24 @@
         .bottom {
             position: absolute;
             /*border: 1px solid #000;*/
+            width: 60%;
             right: -10%;
             top: 50%;
 
         }
 
         .card {
-            height: 575px;
-            width: 550px;
+            height: 550px;
+            width: 500px;
             background-color: #fff;
             margin: 0;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            border-radius: 15px;
+            border-radius: 20px;
             overflow: hidden;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
         p {
@@ -64,32 +72,65 @@
             font-weight: 400;
             font-size: 18px;
         }
+
+        .profileImage {
+            border: 5px solid #fff;
+            border-radius: 50%;
+            height: 120px;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .layer1 {
+            position: relative;
+            height: 180px;
+            background-image: url('./images/bg-pattern-card.svg');
+        }
+
+        .layer2 {
+            height: 80px;
+        }
+
+        .layer3 {
+            height: 80px;
+            text-align: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 5%;
+        }
+
+        .layer4 {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-around;
+            height: 80px;
+            padding: 5%;
+
+        }
     </style>
 </head>
 
 <body>
     <img class="top" src="images/bg-pattern-top.svg" alt="top Circle"></div>
     <img class="bottom" src="images/bg-pattern-bottom.svg" alt="bottom circle"></div>
-    <div class="card" style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <div class="card">
 
-        <div style="position: relative; height: 200px; background-image: url('./images/bg-pattern-card.svg');">
-            <div><img
-                    style="border:5px solid #fff; border-radius: 50%; height: 120px;  position: absolute; top: 100%; left: 50%; transform: translate(-50%, -50%);"
-                    src="./images/image-victor.jpg"></div>
+        <div class="layer1">
+            <div><img class="profileImage" src="./images/image-victor.jpg"></div>
         </div>
 
-        <div style="height: 80px;"></div>
+        <div class="layer2"></div>
 
-        <div style=" height: 80px; text-align: center; border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding: 5%;">
-            <div style=" font-size: 24px; font-weight: 700; "><span>Victor
+        <div class="layer3">
+            <div><span>Victor
                     Crest</span> <span style="color: hsl(0, 0%, 59%); font-size: 24px; font-weight: 400;">26</span>
             </div>
             <p class="subtext">London</p>
         </div>
 
-        <div style="flex-wrap: wrap; display: flex; justify-content: space-around;  height: 80px; padding: 5%;">
-            <div
-                style="display: flex; justify-content: space-around; width: 100%; font-size: 24px; text-align: center; font-weight: 700;">
+        <div class="layer4">
+            <div style="display: flex; justify-content: space-around; width: 100%; ">
                 <div>80K <p class="subtext">Followers</p>
                 </div>
                 <div>803K <p class="subtext">Likes</p>
